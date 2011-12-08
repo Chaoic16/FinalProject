@@ -1,4 +1,6 @@
 DXSFinalProject::Application.routes.draw do
+  resources :ratings
+
   resources :comments
 
   resources :games
