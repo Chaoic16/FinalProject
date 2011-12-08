@@ -1,4 +1,6 @@
 DXSFinalProject::Application.routes.draw do
+  resources :comments
+
   resources :games
 
   resources :platforms
