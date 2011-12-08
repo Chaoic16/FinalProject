@@ -1,4 +1,6 @@
 DXSFinalProject::Application.routes.draw do
+  resources :developers
+
   resources :users
 
   get "pages/home"
