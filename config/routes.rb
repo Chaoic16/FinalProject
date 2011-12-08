@@ -1,4 +1,8 @@
 DXSFinalProject::Application.routes.draw do
+  resources :platforms
+
+  resources :publishers
+
   resources :developers
 
   resources :users
