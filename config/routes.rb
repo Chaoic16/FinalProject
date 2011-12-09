@@ -7,28 +7,28 @@ DXSFinalProject::Application.routes.draw do
   resources :developers
   resources :users
   
-  get "pages/home"
-  get "pages/contact"
-  get "pages/about"
-  get "pages/game"
-  get "pages/developer"
-  get "pages/publisher"
-  get "pages/platform"
-  get "pages/feedback"
-  get "pages/registry"
-  get "pages/forgot"
+  #get "pages/home"
+  #get "pages/contact"
+  #get "pages/about"
+  #get "pages/game"
+  #get "pages/developer"
+  #get "pages/publisher"
+  #get "pages/platform"
+  #get "pages/feedback"
+  #get "pages/registry"
+  #get "pages/forgot"
   
-  #root :to => 'pages#home'
-  #match '/contact', :to => 'pages#contact'
-  #match '/about', :to => 'pages#about'
-  #match '/help', :to => 'pages#help'
-  #match '/game', :to => 'pages#game'
-  #match '/developer', :to => 'pages#developer'
-  #match '/publisher', :to => 'pages#publisher'
-  #match '/platform', :to => 'pages#platform'
-  #match '/feedback', :to => 'pages#feedback'
-  #match '/registry', :to => 'pages#registry'
-  #match '/forgot', :to => 'pages#forgot'
+  root :to => 'pages#home'
+  match '/contact', :to => 'pages#contact'
+  match '/about', :to => 'pages#about'
+  match '/help', :to => 'pages#help'
+  match '/game', :to => 'pages#game'
+  match '/developer', :to => 'pages#developer'
+  match '/publisher', :to => 'pages#publisher'
+  match '/platform', :to => 'pages#platform'
+  match '/feedback', :to => 'pages#feedback'
+  match '/registry', :to => 'pages#registry'
+  match '/forgot', :to => 'pages#forgot'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
