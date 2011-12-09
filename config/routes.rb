@@ -28,6 +28,7 @@ DXSFinalProject::Application.routes.draw do
   match '/feedback', :to => 'pages#feedback'
   match '/registry', :to => 'pages#registry'
   match '/forgot', :to => 'pages#forgot'
+  match '/term', :to => 'pages#term'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

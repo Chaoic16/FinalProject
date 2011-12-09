@@ -38,4 +38,8 @@ class PagesController < ApplicationController
   def forgot
     @title = "Forgot password"
   end
+  
+  def term
+    @title = "Terms of Service Privacy Statement"
+  end
 end
