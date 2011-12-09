@@ -1,14 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DXSFinalProject</title>
-  <%= stylesheet_link_tag    "application" %>
+  <title><%= @title %></title>
+  <%= render 'layouts/stylesheets' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+	<!--------------------------------------------------------------------------- TOP ---------------------------------------------------------------------------->
+	<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+	<div id="Top"> 
+		<!---------------------------------- Left banner ---------------------------------->
+		<div id="leftBanner">
+			<%= render 'layouts/header' %>
+			<!---------------------------------- Right Banner ---------------------------------->
+			<div id="rightBanner">
+				<br />
+				<form name="login" id="login">
+					<table>
+						<tr>
+							<td> <b>login name</b> </td>					
+							<td> <input type="text" name="firstname" id="firstname" size="25" /> </td>
+						</tr>
+						<tr>
+							<td> <b>password</b> </td>
+							<td> <input type="text" name="middlename" id="middlename" size="25" /> </td>
+						</tr>
+						<tr>
+							<td><input type="submit" id="login" value="Login" /></td>
+						</tr>
+					</table>
+					<hr />
+					<footer>
+						<ul>
+							<li><%= link_to "Registration", "#" %></li>
+							<li> | </li>
+							<li><%= link_to "Forgot password", "#" %></li>
+						</ul>
+					</footer>
+				</form>				
+			</div> <!-- End Right Banner -->			
+		</div> <!-- End Left Banner -->		
+	</div> <!-- End Top -->
+	<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+	<!-------------------------------------------------------------------------- Center -------------------------------------------------------------------------->
+	<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+	<div id="Center">
+		<!---------------------------------- Left Section ---------------------------------->
+		<div id="LeftSection">
+			<center><h3>Menu</h3></center>
+			<hr /><br />
+			<center><b> <%= link_to "News", "#" %> </b></center>
+			<center><b> <%= link_to "Games List", "#" %> </b></center>
+			<center><b> <%= link_to "Developer Teams List", "#" %> </b></center>
+			<center><b> <%= link_to "Publishers List", "#" %> </b></center>
+			<center><b> <%= link_to "Platforms List", "#" %> </b></center>
+			<center><b> <%= link_to "Feedback", "#" %> </b></center>
+			<center><b> <%= link_to "Contact us", "#" %> </b></center>
+			<center><b> <%= link_to "About us", "#" %> </b></center>
+			<br /><hr /><br />
+			<table>
+				<tr>
+					<td>
+						<center><label><b> Search </b></label></center>
+					</td>
+					<td>
+						<center><label><b> By: </b></label></center>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="search" id="search" size="10" />
+					</td>
+					<td><select name="search">
+						<option>Game Title</option> <option>Developer Team</option> 
+						<option>Publisher</option> <option>Platform</option>
+					</select></td>
+				</tr>				
+			</table>
+			<table>
+				<tr>
+					<td><input type="submit" id="search" value="Search" /></td>
+				</tr>
+			</table>
+			<hr />
+			<center><h2><b><script type="text/javascript"> 
+					var currentTime = new Date()
+					var month = currentTime.getMonth() + 1
+					var day = currentTime.getDate()
+					var year = currentTime.getFullYear()					
+					var hours = currentTime.getHours()
+					var minutes = currentTime.getMinutes()
+					if (minutes < 10)
+						minutes = "0" + minutes
+					document.write(month + "/" + day + "/" + year + " \| " + hours + ":" + minutes + " ")
+					if(hours > 11)
+						document.write("PM")
+					else
+						document.write("AM")
+				</script></b></h2></center><hr />
+		</div> <!-- end Left Section -->
+		<!---------------------------------- Main ---------------------------------->
+		<div id="main">
+			<%= yield %>
+		</div> <!-- end Main -->
+	</div> <!-- end Center -->
+	<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+	<!-------------------------------------------------------------------------- Bottom -------------------------------------------------------------------------->
+	<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+	<div id="Bottom">
+		<br /><br />
+		<center>
+			<%= render 'layouts/footer' %>
+		</center>
+	</div> <!-- end Bottom -->
 </body>
 </html>
