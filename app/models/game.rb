@@ -1,7 +1,7 @@
 class Game < ActiveRecord::Base
-  attr_accessible :title, :developer_id, :publisher_id, :platform_id
+  attr_accessible :title
   
   has_many :ratings
-  belongs_to :publishers
-  belongs_to :developers
+  belongs_to :publisher
+  belongs_to :developer
 end

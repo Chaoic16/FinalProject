@@ -11,23 +11,35 @@
       </ul>
     </div>
   <% end %>
+  
+<table>
+	<div class="field">
+		<tr>
+			<td> <%= f.label :title %> </td>
+			<td> <%= f.text_field :title %> </td>
+		</tr>
+	</div>
+	
+	<div class="field">
+		<tr>
+			<td> <%= f.label :developer_id %> </td>
+			<td> <%= f.text_field :developer_id %> </td>
+		</tr>
+ 	</div>
+ 	<div class="field">
+		<tr>
+			<td> <%= f.label :publisher_id %> </td>
+			<td> <%= f.text_field :publisher_id %> </td>
+		</tr>
+ 	</div>
+ 	<div class="field">
+		<tr>
+			<td> <%= f.label :platform_id %> </td>
+			<td> <%= f.text_field :platform_id %> </td>
+		</tr>
+ 	</div>
+</table><br /><hr /><br />
 
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :developer_id %><br />
-    <%= f.text_field :developer_id %>
-  </div>
-  <div class="field">
-    <%= f.label :publisher_id %><br />
-    <%= f.text_field :publisher_id %>
-  </div>
-  <div class="field">
-    <%= f.label :platform_id %><br />
-    <%= f.text_field :platform_id %>
-  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

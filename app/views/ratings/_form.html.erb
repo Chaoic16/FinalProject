@@ -12,18 +12,27 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :value %><br />
-    <%= f.number_field :value %>
-  </div>
-  <div class="field">
-    <%= f.label :user_id %><br />
-    <%= f.text_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :game_id %><br />
-    <%= f.text_field :game_id %>
-  </div>
+<table>
+	<div class="field">
+		<tr>
+			<td> <%= f.label :value %> </td>
+			<td> <%= f.number_field :value %> </td>
+		</tr>
+	</div>
+	<div class="field">
+		<tr>
+			<td> <%= f.label :user_id %> </td>
+			<td> <%= f.text_field :user_id %> </td>
+		</tr>
+ 	</div>
+ 	<div class="field">
+		<tr>
+			<td> <%= f.label :game_id %> </td>
+			<td> <%= f.text_field :game_id %> </td>
+		</tr>
+ 	</div>
+</table><br /><hr /><br />
+
   <div class="actions">
     <%= f.submit %>
   </div>
