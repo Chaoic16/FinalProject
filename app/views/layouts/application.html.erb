@@ -34,9 +34,9 @@
 					<hr />
 					<footer>
 						<ul>
-							<li><%= link_to "Registration", "#" %></li>
+							<li><%= link_to "Registration", registry_path %></li>
 							<li> | </li>
-							<li><%= link_to "Forgot password", "#" %></li>
+							<li><%= link_to "Forgot password", forgot_path %></li>
 						</ul>
 					</footer>
 				</form>				
@@ -51,14 +51,14 @@
 		<div id="LeftSection">
 			<center><h3>Menu</h3></center>
 			<hr /><br />
-			<center><b> <%= link_to "News", "#" %> </b></center>
-			<center><b> <%= link_to "Games List", "#" %> </b></center>
-			<center><b> <%= link_to "Developer Teams List", "#" %> </b></center>
-			<center><b> <%= link_to "Publishers List", "#" %> </b></center>
-			<center><b> <%= link_to "Platforms List", "#" %> </b></center>
-			<center><b> <%= link_to "Feedback", "#" %> </b></center>
-			<center><b> <%= link_to "Contact us", "#" %> </b></center>
-			<center><b> <%= link_to "About us", "#" %> </b></center>
+			<center><b> <%= link_to "News", root_path %> </b></center>
+			<center><b> <%= link_to "Games List", gameList_path %> </b></center>
+			<center><b> <%= link_to "Developer Teams List", developerList_path %> </b></center>
+			<center><b> <%= link_to "Publishers List", publisherList_path %> </b></center>
+			<center><b> <%= link_to "Platforms List", platformList_path %> </b></center>
+			<center><b> <%= link_to "Feedback", feedback_path %> </b></center>
+			<center><b> <%= link_to "Contact us", contact_path %> </b></center>
+			<center><b> <%= link_to "About us", about_path %> </b></center>
 			<br /><hr /><br />
 			<table>
 				<tr>
