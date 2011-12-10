@@ -1,5 +1,5 @@
 class Rating < ActiveRecord::Base  
-  attr_accessible :value, :user_id, :game_id
+  attr_accessible :value
   
   belongs_to :user
   belongs_to :game

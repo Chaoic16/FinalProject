@@ -6,9 +6,11 @@
 
 <table>
   <tr>
-    <th>Value</th>
-    <th>User</th>
-    <th>Game</th>
+  	<th>User</th>
+  	<th> | </th>
+  	<th>Game</th>
+  	<td> | </td>
+    <th>Rating</th>
     <th></th>
     <th></th>
     <th></th>
@@ -16,9 +18,11 @@
 
 <% @ratings.each do |rating| %>
   <tr>
+  	<td><%= rating.user_id %></td>
+  	<td> | </td>
+  	<td><%= rating.game_id %></td>
+  	<td> | </td>
     <td><%= rating.value %></td>
-    <td><%= rating.user_id %></td>
-    <td><%= rating.game_id %></td>
     <td><%= link_to 'Show', rating %></td>
     <td><%= link_to 'Edit', edit_rating_path(rating) %></td>
     <td><%= link_to 'Destroy', rating, confirm: 'Are you sure?', method: :delete %></td>
@@ -28,6 +32,6 @@
 
 <br />
 
-<%= link_to 'Back to main page', root_path %> 
+<%= link_to 'Back to main page', root_path %> | 
 <%= link_to 'Add rating to game', new_rating_path %>
 </font>

@@ -16,7 +16,8 @@
   <%= @rating.game_id %>
 </p>
 
-<%= link_to 'Back to main page', root_path %>
+<%= link_to 'Back to main page', root_path %> |
+<%= link_to 'Add rating to game', new_rating_path %> |
 <%= link_to 'Edit rating', edit_rating_path(@rating) %> |
 <%= link_to 'Back to rating list', ratings_path %>
 </font>

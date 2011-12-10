@@ -7,7 +7,8 @@
 <table>
   <tr>
     <th>Content</th>
-    <th>User</th>
+    <th> | </th>
+    <th>( User )</th>
     <th></th>
     <th></th>
     <th></th>
@@ -16,15 +17,14 @@
 <% @comments.each do |comment| %>
   <tr>
     <td><%= comment.content %></td>
-    <td><%= comment.user_id %></td>
+    <td> | </td>
+    <td>( <%= comment.user_id %> )</td>
     <td><%= link_to 'Show', comment %></td>
     <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
     <td><%= link_to 'Destroy', comment, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
+</table><br /><hr />
 <% end %>
-</table>
-
-<br />
 
 <%= link_to 'Back to main page', root_path %>
 <%= link_to 'Add Comment', new_comment_path %>
