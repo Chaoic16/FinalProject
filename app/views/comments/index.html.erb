@@ -7,8 +7,10 @@
 <table>
   <tr>
     <th>Content</th>
+    <!--
     <th> | </th>
     <th>( User )</th>
+    -->
     <th></th>
     <th></th>
     <th></th>
@@ -17,8 +19,10 @@
 <% @comments.each do |comment| %>
   <tr>
     <td><%= comment.content %></td>
+    <!--
     <td> | </td>
     <td>( <%= comment.user_id %> )</td>
+    -->
     <td><%= link_to 'Show', comment %></td>
     <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
     <td><%= link_to 'Destroy', comment, confirm: 'Are you sure?', method: :delete %></td>

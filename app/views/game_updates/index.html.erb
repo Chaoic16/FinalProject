@@ -7,8 +7,11 @@
 <table>
   <tr>
     <th> [ Title] </th>
+    <th> | </th>
     <th> [ Developer ] </th>
+    <th> | </th>
     <th> [ Publisher] </th>
+    <th> | </th>
     <th> [ Platform ] </th>
     <th></th>
     <th></th>
@@ -19,9 +22,12 @@
 <% @game_updates.each do |game_update| %>
   <tr>
     <td><%= game_update.nameG %></td>
+    <td> | </td>
     <td><%= game_update.developerG %></td>
+    <td> | </td>
     <td><%= game_update.publisherG %></td>
-    <td><%= game_update.platformG %></td>    
+    <td> | </td>
+    <td><%= game_update.platformG %></td>
     <td><%= link_to 'Show', game_update %></td>
     <td><%= link_to 'Edit', edit_game_path(game_update) %></td>
     <td><%= link_to 'Destroy', game_update, confirm: 'Are you sure?', method: :delete %></td>

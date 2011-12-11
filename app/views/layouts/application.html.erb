@@ -31,14 +31,8 @@
 							<td><input type="submit" id="login" value="Login" /></td>
 						</tr>
 					</table>
-					<hr />
-					<footer>
-						<ul>
-							<li><%= link_to "Registration", new_user_path %></li>
-							<li> | </li>
-							<li><%= link_to "Forgot password", forgot_path %></li>
-						</ul>
-					</footer>
+					<hr />					
+					<h4><b><%= link_to "Registration", new_user_path %> | <%= link_to "Forgot password", forgot_path %> | <%= link_to 'User list', users_path %></b></h4>
 				</form>				
 			</div> <!-- End Right Banner -->			
 		</div> <!-- End Left Banner -->		
@@ -52,7 +46,8 @@
 			<center><h3>Menu</h3></center>
 			<hr /><br />
 			<center><b> <%= link_to "News", root_path %> </b></center>
-			<center><b> <%= link_to "Games List", games_path %> </b></center>
+			<!--<center><b> <%= link_to "Games List", games_path %> </b></center> -->
+			<center><b> <%= link_to "Games List", game_updates_path %> </b></center>
 			<center><b> <%= link_to "Rate Game", ratings_path %> </b></center>
 			<center><b> <%= link_to "Developer Teams List", developers_path %> </b></center>
 			<center><b> <%= link_to "Publishers List", publishers_path %> </b></center>
