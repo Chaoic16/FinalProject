@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111208221044) do
+ActiveRecord::Schema.define(:version => 20111211232151) do
 
   create_table "comments", :force => true do |t|
     t.string   "content"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(:version => 20111208221044) do
 
   create_table "developers", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "game_updates", :force => true do |t|
+    t.string   "nameG"
+    t.string   "developerG"
+    t.string   "publisherG"
+    t.string   "platformG"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,47 @@
+<font color="FFFFFF">
+<%= form_for(@game_update) do |f| %>
+  <% if @game_update.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game_update.errors.count, "error") %> prohibited this game_update from being saved:</h2>
+
+      <ul>
+      <% @game_update.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+<table>
+	<div class="field">
+		<tr>
+			<td> <%= f.label :nameG %> </td>
+			<td> <%= f.text_field :nameG %> </td>
+		</tr>
+	</div>
+	
+	<div class="field">
+		<tr>
+			<td> <%= f.label :developerG %> </td>
+			<td> <%= f.text_field :developerG %> </td>
+		</tr>
+ 	</div>
+ 	<div class="field">
+		<tr>
+			<td> <%= f.label :publisherG %> </td>
+			<td> <%= f.text_field :publisherG %> </td>
+		</tr>
+ 	</div>
+ 	<div class="field">
+		<tr>
+			<td> <%= f.label :platformG %> </td>
+			<td> <%= f.text_field :platformG %> </td>
+		</tr>
+ 	</div>
+</table><br /><hr /><br />
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</font>

@@ -1,0 +1,27 @@
+<font color="FFFFFF">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nameg:</b>
+  <%= @game_update.nameG %>
+</p>
+
+<p>
+  <b>Developerg:</b>
+  <%= @game_update.developerG %>
+</p>
+
+<p>
+  <b>Publisherg:</b>
+  <%= @game_update.publisherG %>
+</p>
+
+<p>
+  <b>Platformg:</b>
+  <%= @game_update.platformG %>
+</p>
+
+<%= link_to 'Back to main page', root_path %> |
+<%= link_to 'Edit game', edit_game_update_path(@game) %> |
+<%= link_to 'Back to game list', game_updates_path %>
+</font>
